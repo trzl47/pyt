@@ -1,0 +1,41 @@
+{
+  "name": "pytdance",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+		"start": "hjs-dev-server",
+    "build": "NODE_ENV=production webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trzl47/PYTDance.git"
+  },
+  "author": "Tyre Brown",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trzl47/PYTDance/issues"
+  },
+  "homepage": "https://github.com/trzl47/PYTDance#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.7.6",
+    "babel": "^6.23.0",
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-react-hmre": "^1.1.1",
+    "css-loader": "^0.26.2",
+    "file-loader": "^0.10.1",
+    "hjs-webpack": "^8.4.3",
+    "json-loader": "^0.5.4",
+    "postcss-loader": "^1.3.2",
+    "react-dom": "^15.4.2",
+    "style-loader": "^0.13.2",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.2.1"
+  },
+  "dependencies": {
+    "react": "^15.4.2"
+  }
+}
