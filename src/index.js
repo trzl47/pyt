@@ -1,6 +1,9 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import ReactDOM from 'react-dom';
 
-// import Home from './components/homepage/homepage.js';
+//CSS
+import './styles/bootstrap-3.3.6-dist/css/bootstrap.min.css';
 
-ReactDOM.render(<Home />, document.getElementById('app'));
+// Routes
+import routes from './router';
+
+ReactDOM.render(routes, document.getElementById('app'));
