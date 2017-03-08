@@ -5,7 +5,7 @@ class Supporting extends Component {
     return (
       <section>
 				<div className="container">
-					Supporting
+					{ this.props.children }
 				</div>
       </section>
     );
