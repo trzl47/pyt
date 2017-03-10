@@ -5,14 +5,14 @@ const Profiles = {
 			name: "Johnny Thunder",
 			title: "Co-Founder",
 			random: "Tap, Jazz, Jazz-Hands, Jazz-Tap, Tap-Tap, Belly. I love to dance all the dances.",
-			img: "./assets/johnny.png",
+			img: "require('./content/profilecard/assets/johnny.png')",
 			id: count++
     },
 		{
 			name: "Ella McDonald",
 			title: "Co-Founder",
 			random: "Fact And Truth",
-			img: "./assets/ella.png",
+			img: "./content/profilecard/assets/ella.png",
 			id: count++
     },
 		{
