@@ -8,7 +8,7 @@ class Header extends Component {
     return (
       <div className="container">
         <header>
-          <Link to="/">
+          <Link to="/home">
 						<img className="desktop icon" src={require('./assets/logo-color.png')} alt="logo"></img>
 						<img className="desktop icon" src={require('./assets/logo-mobile.png')} alt="logo"></img>
 					</Link>
