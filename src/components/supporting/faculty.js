@@ -23,9 +23,9 @@ const renderProfiles = (profiles, length) => {
 	};
 	const renderRows = () => {
 		return (
-			chunkProfiles(profilecards, 3).map((row) => {
+			chunkProfiles(profilecards, 3).map((row, index) => {
 				return (
-					<div className="row">
+					<div className="row" key={index}>
 						{ row }
 					</div>
 				)

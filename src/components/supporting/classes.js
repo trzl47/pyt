@@ -24,9 +24,9 @@ const renderClasses = (classes, length) => {
 	};
 	const renderRows = () => {
 		return (
-			chunkClasses(classcards, 3).map((row) => {
+			chunkClasses(classcards, 3).map((row, index) => {
 				return (
-					<div className="row">
+					<div className="row" key={index}>
 						{ row }
 					</div>
 				)

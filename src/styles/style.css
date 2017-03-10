@@ -1,0 +1,118 @@
+/* =================================
+WEB FONTS
+==================================== */
+
+/* =================================
+ELEMENT STYLES
+==================================== */
+html {
+	font-size: 16px;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+/* =================================
+LAYOUT & PAGE STYLES
+==================================== */
+.container {
+	margin: none;
+	padding: unset;
+
+}
+header {
+	background: #000000;
+	height: 3.875rem;
+	padding-left: 3.6875rem;
+	padding-right: 3.4375rem;
+}
+nav {
+}
+/* NAV -------- */
+
+nav div {
+	/*display: inline-flex;*/
+	/*justify-content: center;*/
+	/*align-items: center;*/
+}
+nav .desktop.icon {
+	height:3.875rem;
+}
+nav .mobile.icon {
+	display: none;
+}
+.nav li a {
+	font-family: 'Open Sans', sans-serif;
+	color: #ffffff;
+	font-size: 1rem;
+	font-weight: bold;
+}
+.navbar-nav > .active > a,
+.navbar-nav > .active > a:hover {
+	color: #f5a623;
+	background-color: #000000;
+}
+
+/* ./NAV -------- */
+
+/* BANNER -------- */
+
+.banner.container {
+	padding-top: 9.4375rem;
+	padding-bottom: 3.125rem;
+	background-image: url(/static/media/dancers-photo.5b381782.png);
+  background-size: cover;
+	background-position: center;
+  background-repeat: no-repeat;
+	width: 100%;
+}
+.home.attention {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 45rem;
+}
+.home.attention h1 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 3.125rem;
+	font-weight: bold;
+	color:#ffffff;
+	line-height: 1;
+	width: 45rem;
+	text-align: center;
+}
+.home.attention p {
+	padding-top: 2.6875rem;
+	font-size: 1.5rem;
+	line-height:1.5;
+	color:#ffffff;
+}
+
+.home.button {
+	margin-top:5rem;
+	padding:1.25rem 3.125rem;
+	border-radius: 2px;
+	background-color: #f5a623;
+	color:#ffffff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.375rem;
+	font-weight: bold;
+}
+
+
+/* ./BANNER -------- */
+
+
+/* SUPPORTING -------- */
+
+
+
+/* ./SUPPORTING -------- */
+
+
+/* FOOTER -------- */
+
+
+
+/* ./FOOTER -------- */

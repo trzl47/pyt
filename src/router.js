@@ -31,7 +31,7 @@ const routes = (
 				<Route path='faculty' component={FacultyBanner} />
 			</Route> */}
 			<Route component={Supporting}>
-				<Route path='/home' component={Home} panels={Panels.Home}/>
+				<Route path='/' component={Home} panels={Panels.Home}/>
 				<Route path='about' component={About} panels={Panels.About} infobars={InfoBars.About} />
 				<Route path='classes' component={Classes} classes={ClassCards.Classes} />
 				<Route path='faculty' component={Faculty} profiles={Profiles.Faculty} />
