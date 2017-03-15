@@ -4,7 +4,7 @@ import ProfileCard from './content/profilecard/profilecard.js';
 const renderProfiles = (profiles, length) => {
 	const profilecards = profiles.map((profilecard) => {
 		return (
-			<div className="col-md-3">
+			<div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 			 <ProfileCard
 				title={profilecard.title}
 				img={profilecard.img}
@@ -37,17 +37,15 @@ const renderProfiles = (profiles, length) => {
 	);
 };
 
-class Faculty extends Component {
+class FacultySupporting extends Component {
 	render() {
 		const profilecardContent = this.props.route.profiles;
 		return (
-			<section>
-				<div className="faculty supporting container">
-					{ renderProfiles(profilecardContent, profilecardContent.length) }
-				</div>
-			</section>
+			<div className="faculty">
+				{ renderProfiles(profilecardContent, profilecardContent.length) }
+			</div>
 		);
 	}
 }
 
-	export default Faculty;
+	export default FacultySupporting;

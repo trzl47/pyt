@@ -3,11 +3,9 @@ import React, { Component } from 'react';
 class Supporting extends Component {
   render() {
     return (
-      <section>
-				<div className="container">
+				<div className="supporting container">
 					{ this.props.children }
 				</div>
-      </section>
     );
   }
 }

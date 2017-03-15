@@ -1,31 +1,46 @@
 import React, { Component } from 'react';
 import Panel from './content/panels/panel.js';
 import InfoBarA from './content/infobar/infobarA.js';
+import InfoBarB from './content/infobar/infobarB.js';
 
-class About extends Component {
+class AboutSupporting extends Component {
 	render() {
-    let panelContent = this.props.route.panels;
-    let panels = panelContent.map((panel) => {
+    const panelContent = this.props.route.panels;
+    const panels = panelContent.map((panel) => {
       return <Panel title={panel.title}
 										desc={panel.description}
-                    key={panel.id} />
+                    key={panel.id}
+										img={panel.img}
+									 	color={panel.color}/>
     });
-		let infobarContent = this.props.route.infobars;
-    let infobarAs = infobarContent.map((infobarA) => {
-      return <InfoBarA title={infobarA.title}
-										desc={infobarA.description}
-										img={infobarA.img}
-                    key={infobarA.id} />
+		const infobarContent = this.props.route.infobars;
+		let infobarA = [];
+		let infobarB = [];
+		infobarContent.forEach(function(obj) {
+			obj.id % 2 === 0 ?
+				infobarA.push(obj)
+				:
+				infobarB.push(obj);
+		});
+    infobarA = infobarA.map((infobar) => {
+      return <InfoBarA title={infobar.title}
+										desc={infobar.description}
+										img={infobar.img}
+                    key={infobar.id} />
+    });
+		infobarB = infobarB.map((infobar) => {
+      return <InfoBarB title={infobar.title}
+										desc={infobar.description}
+										img={infobar.img}
+                    key={infobar.id} />
     });
     return (
-      <section>
-				<div className="about supporting container">
-					{ infobarAs }
+				<div className="about">
+					{ infobarA.concat(infobarB).sort(function(a, b){ return a.key - b.key }) }
 					{ panels }
 				</div>
-      </section>
     );
   }
 }
 
-export default About;
+export default AboutSupporting;

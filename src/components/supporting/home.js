@@ -1,23 +1,23 @@
 import React, { Component } from 'react';
 import Panel from './content/panels/panel.js';
 
-class Home extends Component {
+class HomeSupporting extends Component {
 	render() {
     let panelContent = this.props.route.panels;
     let panels = panelContent.map((panel) => {
       return <Panel title={panel.title}
 										desc={panel.description}
                     sub={panel.subtext}
-                    key={panel.id} />
+                    key={panel.id}
+										img={panel.img}
+									 	color={panel.color}/>
     });
     return (
-      <section>
-				<div className="home supporting container">
+				<div className="home">
 					{panels}
 				</div>
-      </section>
     );
   }
 }
 
-export default Home;
+export default HomeSupporting;

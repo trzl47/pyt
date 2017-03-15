@@ -6,9 +6,11 @@ class Footer extends Component {
       <div className="footer container">
 				<div className="row media">
 					<img className="desktop icon" src={require('./assets/logo-color.png')} alt="logo"></img>
-					<a href=""><i className="fa fa-facebook fa-2x"></i><span></span></a>
-					<a href=""><i className="fa fa-twitter fa-2x"></i><span></span></a>
-					<a href=""><i className="fa fa-instagram fa-2x"></i><span></span></a>
+					<div className="social-media container">
+						<a href=""><i className="fa fa-facebook fa-2x"></i></a>
+						<a href=""><i className="fa fa-twitter fa-2x"></i></a>
+						<a href=""><i className="fa fa-instagram fa-2x"></i></a>
+					</div>
 					<span><a href=""> Contact Us </a> | <a href=""> Terms & Conditions </a></span>
 				</div>
 				<div className="row contact">

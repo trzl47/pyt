@@ -4,7 +4,7 @@ import ClassCard from './content/classcard/classcard.js';
 const renderClasses = (classes, length) => {
 	const classcards = classes.map((classcard) => {
 		return (
-			<div className="col-md-3">
+			<div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 				<ClassCard title={classcard.title}
 											weekdays={classcard.weekdays}
 											weekdaysched={classcard.weekdaysched}
@@ -38,17 +38,15 @@ const renderClasses = (classes, length) => {
 	);
 };
 
-class Classes extends Component {
+class ClassesSupporting extends Component {
 	render() {
 		const classcardContent = this.props.route.classes;
 		return (
-			<section>
-				<div className="classes supporting container">
+				<div className="classes">
 					{ renderClasses(classcardContent, classcardContent.length) }
 				</div>
-			</section>
 		);
 	}
 }
 
-export default Classes;
+export default ClassesSupporting;
