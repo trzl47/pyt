@@ -3,7 +3,7 @@ import Panel from './content/panels/panel.js';
 
 class HomeSupporting extends Component {
 	render() {
-    let panelContent = this.props.route.panels;
+    let panelContent = this.props.panels;
     let panels = panelContent.map((panel) => {
       return <Panel title={panel.title}
 										desc={panel.description}

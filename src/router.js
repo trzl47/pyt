@@ -1,33 +1,63 @@
 // Libs
 import React from 'react';
-import { Router, Route, browserHistory } from 'react-router';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 // Components
-import App from './components/app.js';
-import Supporting from './components/supporting/supporting.js';
-import Home from './components/supporting/home.js';
-import About from './components/supporting/about.js';
-import Classes from './components/supporting/classes.js';
-import Faculty from './components/supporting/faculty.js';
-import Panels from './components/supporting/content/panels/panels.js';
-import InfoBars from './components/supporting/content/infobar/infobars.js';
-import ClassCards from './components/supporting/content/classcard/classcards.js';
-import Profiles from './components/supporting/content/profilecard/profiles.js';
+import Header from './components/header/header.js';
+import Banner from './components/banner/banner.js';
+import banners from './components/banner/banners.js';
+import Footer from './components/footer/footer.js';
+	import Home from './components/supporting/home.js';
+	import About from './components/supporting/about.js';
+	import Classes from './components/supporting/classes.js';
+	import Faculty from './components/supporting/faculty.js';
+		import panels from './components/supporting/content/panels/panels.js';
+		import infobars from './components/supporting/content/infobar/infobars.js';
+		import classCards from './components/supporting/content/classcard/classcards.js';
+		import profiles from './components/supporting/content/profilecard/profiles.js';
 import NotFound from './components/NotFound';
 
 // Routes
 const routes = (
-  <Router history={browserHistory}>
-		<Route component={App}>
-			<Route component={Supporting}>
-				<Route path='/' component={Home} panels={Panels.Home}/>
-				<Route path='about' component={About} panels={Panels.About} infobars={InfoBars.About} />
-				<Route path='classes' component={Classes} classes={ClassCards.Classes} />
-				<Route path='faculty' component={Faculty} profiles={Profiles.Faculty} />
-			</Route>
-			<Route component={NotFound} />
-		</Route>
-  </Router>
+	<Router>
+		<div>
+			<Switch>
+				<Route exact path='/' render={({path}) => (
+					<div>
+						<Header />
+						<Banner page={banners.Home} />
+						<Home panels={panels.Home}/>
+						<Footer />
+					</div>
+				)} />
+				<Route exact path='/about' render={({path}) => (
+					<div>
+						<Header />
+						<Banner page={banners.About} />
+						<About panels={panels.About} infobars={infobars.About} />
+						<Footer />
+					</div>
+				)} />
+				<Route exact path='/classes' render={({path}) => (
+					<div>
+						<Header />
+						<Banner page={banners.Classes} />
+						<Classes classes={classCards.Classes} />
+						<Footer />
+					</div>
+				)} />
+				<Route exact path='/faculty' render={({path}) => (
+					<div>
+						<Header />
+						<Banner page={banners.Faculty} />
+						<Faculty profiles={profiles.Faculty} />
+						<Footer />
+					</div>
+				)} />
+				<Route path='*' component={NotFound} />
+			</Switch>
+		</div>
+	</Router>
 );
 
 export default routes;

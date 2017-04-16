@@ -1,5 +1,5 @@
 let count = 0;
-const InfoBars = {
+const infobars = {
   "About":[
     {
       title: "Many Styles of Dance",
@@ -28,4 +28,4 @@ const InfoBars = {
   ],
 };
 
-export default InfoBars;
+export default infobars;

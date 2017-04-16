@@ -4,13 +4,12 @@ import ProfileCard from './content/profilecard/profilecard.js';
 const renderProfiles = (profiles, length) => {
 	const profilecards = profiles.map((profilecard) => {
 		return (
-			<div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+			<div className="col-xs-4 col-sm-4 col-md-4 col-lg-4" key={profilecard.id}>
 			 <ProfileCard
 				title={profilecard.title}
 				img={profilecard.img}
 				name={profilecard.name}
-				random={profilecard.random}
-				key={profilecard.id} />
+				random={profilecard.random} />
 			</div>
 		)
 	});
@@ -39,7 +38,7 @@ const renderProfiles = (profiles, length) => {
 
 class FacultySupporting extends Component {
 	render() {
-		const profilecardContent = this.props.route.profiles;
+		const profilecardContent = this.props.profiles;
 		return (
 			<div className="faculty">
 				{ renderProfiles(profilecardContent, profilecardContent.length) }

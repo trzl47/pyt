@@ -5,7 +5,7 @@ import InfoBarB from './content/infobar/infobarB.js';
 
 class AboutSupporting extends Component {
 	render() {
-    const panelContent = this.props.route.panels;
+    const panelContent = this.props.panels;
     const panels = panelContent.map((panel) => {
       return <Panel title={panel.title}
 										desc={panel.description}
@@ -13,7 +13,7 @@ class AboutSupporting extends Component {
 										img={panel.img}
 									 	color={panel.color}/>
     });
-		const infobarContent = this.props.route.infobars;
+		const infobarContent = this.props.infobars;
 		let infobarA = [];
 		let infobarB = [];
 		infobarContent.forEach(function(obj) {

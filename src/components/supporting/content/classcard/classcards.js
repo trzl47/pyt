@@ -1,5 +1,5 @@
 let count = 0;
-const ClassCards = {
+const classCards = {
   "Classes":[
     {
 			title: "Jazzercise!!!!!!",
@@ -112,4 +112,4 @@ const ClassCards = {
   ],
 };
 
-export default ClassCards;
+export default classCards;

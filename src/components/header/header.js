@@ -1,6 +1,6 @@
+// Libs
 import React, { Component } from 'react';
-
-import NavLink from './NavLink';
+import { Link } from 'react-router-dom';
 
 class Header extends Component {
 	render() {
@@ -8,15 +8,15 @@ class Header extends Component {
 			<header>
 				{/* <div className="header container"> */}
 					{/* <div className="row"> */}
-						<nav className="">
-							<NavLink to="/" className="home">
+						<nav> {/* className="navbar navbar-fixed-top" */}
+							<Link to="/" className="home">
 								<img className="desktop icon" src={require('./assets/logo-color.png')} alt="logo"></img>
 								<img className="mobile icon" src={require('./assets/logo-mobile.png')} alt="logo"></img>
-							</NavLink>
+							</Link>
 							<ul className="nav navbar-nav navbar-right">
-								<li className="main-nav"><NavLink className="about" to="/about">About</NavLink></li>
-								<li className="main-nav"><NavLink className="classes" to="/classes">Classes</NavLink></li>
-								<li className="main-nav"><NavLink className="faculty" to="/faculty">Faculty</NavLink></li>
+								<li className="main-nav"><Link className="about" to="/about">About</Link></li>
+								<li className="main-nav"><Link className="classes" to="/classes">Classes</Link></li>
+								<li className="main-nav"><Link className="faculty" to="/faculty">Faculty</Link></li>
 							</ul>
 						</nav>
 					{/* </div> */}

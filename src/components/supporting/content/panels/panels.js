@@ -1,5 +1,5 @@
 let count = 0;
-const Panels = {
+const panels = {
   "Home":[
     {
       title: "Lorem ipsum dolor sit amet.",
@@ -37,4 +37,4 @@ const Panels = {
   ],
 };
 
-export default Panels;
+export default panels;

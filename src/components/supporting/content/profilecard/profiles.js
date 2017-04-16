@@ -1,5 +1,5 @@
 let count = 0;
-const Profiles = {
+const profiles = {
   "Faculty":[
     {
 			name: "Johnny Thunder",
@@ -67,4 +67,4 @@ const Profiles = {
   ],
 };
 
-export default Profiles;
+export default profiles;
