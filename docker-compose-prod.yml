@@ -1,0 +1,17 @@
+version: '3'
+services:
+  web:
+    # image: trzl/portfolio:CHANGE-web_v1
+    # container_name: CHANGE-web
+    restart: unless-stopped
+    expose:
+      - "80"
+      - "443"
+    environment:
+      # VIRTUAL_HOST: CHANGE.tbrownkcdev.com
+      # LETSENCRYPT_HOST: CHANGE.tbrownkcdev.com
+      LETSENCRYPT_EMAIL: brownty47@gmail.com
+networks:
+  default:
+    external:
+      name: webproxy

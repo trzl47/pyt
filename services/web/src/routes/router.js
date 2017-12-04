@@ -1,12 +1,27 @@
 // Components
-import Adoptly from '../app/Adoptly.js';
+import Main from '../app/Main.js';
 import NotFound from '../app/NotFound';
 
 export default {
 	routes: [
 		{
 			path: '/',
-			component: Adoptly,
+			component: Main,
+			exact: true
+		},
+		{
+			path: '/about',
+			component: Main,
+			exact: true
+		},
+		{
+			path: '/classes',
+			component: Main,
+			exact: true
+		},
+		{
+			path: '/faculty',
+			component: Main,
 			exact: true
 		},
 		{

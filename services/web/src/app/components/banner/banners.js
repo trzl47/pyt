@@ -1,30 +1,30 @@
 let count = 0;
 const banners = {
-	"Home":[
+	'Home':[
 		{
 			page: 'home',
-			img: require('./assets/dancers-photo.png'),
+			img: require('../../../static/img/dancers-photo.png'),
 			id: count++
 		},
 	],
-	"About":[
+	'About':[
 		{
 			page: 'about',
-			img: require('./assets/workout-photo.png'),
+			img: require('../../../static/img/workout-photo.png'),
 			id: count++
 		},
 	],
-	"Classes":[
+	'Classes':[
 		{
 			page: 'classes',
-			img: require('./assets/classes-photo.png'),
+			img: require('../../../static/img/classes-photo.png'),
 			id: count++
 		},
 	],
-	"Faculty":[
+	'Faculty':[
 		{
 			page: 'faculty',
-			img: require('./assets/faculty-photo.png'),
+			img: require('../../../static/img/faculty-photo.png'),
 			id: count++
 		},
 	],

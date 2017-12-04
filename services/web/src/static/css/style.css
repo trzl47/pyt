@@ -62,7 +62,7 @@ nav .mobile.icon {
 /*--./Banner Background image changer--*/
 
 .home.banner.container {
-	background-image: url(../../src/components/banner/assets/dancers-photo.png);
+	background-image: url(../img/dancers-photo.png);
 	padding-bottom: 3.125rem;
 	padding-top: 9.4375rem;
   background-size: cover;
@@ -105,7 +105,7 @@ nav .mobile.icon {
 	font-weight: bold;
 }
 .about.banner.container {
-	background-image: url(../../src/components/banner/assets/workout-photo.png);
+	background-image: url(../img/workout-photo.png);
 	border-bottom: 10px solid #794ae2;
 	background-position: left center;
 	background-origin: padding-box;
@@ -139,7 +139,7 @@ nav .mobile.icon {
 	text-align: center;
 }
 .classes.banner.container {
-	background-image: url(../../src/components/banner/assets/classes-photo.png);
+	background-image: url(../img/classes-photo.png);
 	border-bottom: 10px solid #794ae2;
 	background-position: left center;
 	background-origin: padding-box;
@@ -173,7 +173,7 @@ nav .mobile.icon {
 	text-align: center;
 }
 .faculty.banner.container {
-	background-image: url(../../src/components/banner/assets/faculty-photo.png);
+	background-image: url(../img/faculty-photo.png);
 	border-bottom: 10px solid #8a54ff;
 	background-position: left center;
 	background-origin: padding-box;
@@ -355,7 +355,7 @@ nav .mobile.icon {
 
 /* FOOTER -------- */
 .footer {
-	background-image: url(../../src/components/footer/assets/party-photo.png);
+	background-image: url(../img/party-photo.png);
 	background-size: cover;
 	background-position: center;
   background-repeat: no-repeat;
