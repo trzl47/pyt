@@ -14,10 +14,10 @@ class Header extends Component {
 								<img className="desktop icon" src={require('../../../static/img/logo-color.png')} alt="logo"></img>
 								<img className="mobile icon" src={require('../../../static/img/logo-mobile.png')} alt="logo"></img>
 							</NavLink>
-							<ul className="nav navbar-nav navbar-right">
-								<li className="main-nav"><NavLink className="about" to="/about">About</NavLink></li>
-								<li className="main-nav"><NavLink className="classes" to="/classes">Classes</NavLink></li>
-								<li className="main-nav"><NavLink className="faculty" to="/faculty">Faculty</NavLink></li>
+							<ul className="nav main-nav navbar-nav">
+								<NavLink className="about" to="/about"> About </NavLink>
+								<NavLink className="classes" to="/classes">Classes</NavLink>
+								<NavLink className="faculty" to="/faculty">Faculty</NavLink>
 							</ul>
 						</nav>
 					{/* </div> */}

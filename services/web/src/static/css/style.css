@@ -2,40 +2,37 @@
 WEB FONTS
 ==================================== */
 
-/* =================================
-ELEMENT STYLES
-==================================== */
 html {
 	font-size: 16px;
 }
 body {
 	font-family: 'Roboto', sans-serif;
+	display: grid;
+  grid-template-rows: auto;
+	height: 100vh;
+	margin: unset;
+	padding: unset;
 }
 
 /* =================================
 LAYOUT & PAGE STYLES
 ==================================== */
 .container {
-	margin: none;
-	padding: unset;
 }
 .row {
-	margin: unset;
-	padding: unset;
 }
+
+/* NAV -------- */
+
 nav {
 	background: #000000;
 	height: 3.875rem;
 	padding-left: 3.6875rem;
 	padding-right: 3.4375rem;
+	display: flex;
+	flex-direction: row;
 }
-/* NAV -------- */
 
-nav div {
-	/*display: inline-flex;*/
-	/*justify-content: center;*/
-	/*align-items: center;*/
-}
 nav .desktop.icon {
 	height:3.875rem;
 }

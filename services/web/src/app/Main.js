@@ -17,45 +17,51 @@ import Footer from './components/footer/footer.js';
 		import profiles from './components/supporting/content/profilecard/profiles.js';
 import NotFound from '../app/NotFound';
 
+const HomePage = () => (
+	<div>
+		<Banner page={banners.Home} />
+		<Home panels={panels.Home}/>
+	</div>
+);
+
+const AboutPage = () => (
+	<div>
+		<Banner page={banners.About} />
+		<About panels={panels.About} infobars={infobars.About} />
+	</div>
+);
+
+const ClassPage = () => (
+	<div>
+		<Banner page={banners.Classes} />
+		<Classes classes={classCards.Classes} />
+	</div>
+);
+
+const FacultyPage = () => (
+	<div>
+		<Banner page={banners.Faculty} />
+		<Faculty profiles={profiles.Faculty} />
+	</div>
+);
+
+
+
+
 class Main extends Component {
   render() {
 		return (
 			<div>
+				<Header />
+
 				<Switch>
-					<Route exact path='/' render={({path}) => (
-						<div>
-							<Header />
-							<Banner page={banners.Home} />
-							<Home panels={panels.Home}/>
-							<Footer />
-						</div>
-					)} />
-					<Route exact path='/about' render={({path}) => (
-						<div>
-							<Header />
-							<Banner page={banners.About} />
-							<About panels={panels.About} infobars={infobars.About} />
-							<Footer />
-						</div>
-					)} />
-					<Route exact path='/classes' render={({path}) => (
-						<div>
-							<Header />
-							<Banner page={banners.Classes} />
-							<Classes classes={classCards.Classes} />
-							<Footer />
-						</div>
-					)} />
-					<Route exact path='/faculty' render={({path}) => (
-						<div>
-							<Header />
-							<Banner page={banners.Faculty} />
-							<Faculty profiles={profiles.Faculty} />
-							<Footer />
-						</div>
-					)} />
+					<Route exact path='/' render={({path}) => ( HomePage() )} />
+					<Route exact path='/about' render={({path}) => ( AboutPage() )} />
+					<Route exact path='/classes' render={({path}) => ( ClassPage() )} />
+					<Route exact path='/faculty' render={({path}) => ( FacultyPage() )} />
 					<Route path='*' component={NotFound} />
 				</Switch>
+				<Footer />
 			</div>
     );
   }
