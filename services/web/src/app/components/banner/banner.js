@@ -1,8 +1,10 @@
 // Libs
 import React, { Component } from 'react';
+// css
+import '../../../static/css/banner.css';
 
 const renderBanner = (content) => {
-	if (content.page === "home") {
+	if (content.page === 'home') {
 		return(
 			<div className="home banner container">
 				<div className="home attention container">
@@ -13,7 +15,7 @@ const renderBanner = (content) => {
 			</div>
 		);
 	}
-	else if (content.page === "about") {
+	else if (content.page === 'about') {
 		return (
 			<div className="about banner container">
 				<div className="col-md-6">
@@ -27,7 +29,7 @@ const renderBanner = (content) => {
 			</div>
 		);
 	}
-	else if (content.page === "classes") {
+	else if (content.page === 'classes') {
 		return (
 			<div className="classes banner container">
 				<div className="col-md-6">
@@ -41,7 +43,7 @@ const renderBanner = (content) => {
 			</div>
 		);
 	}
-	else if (content.page === "faculty") {
+	else if (content.page === 'faculty') {
 		return (
 			<div className="faculty banner container">
 				<div className="col-md-4">
@@ -60,13 +62,12 @@ const renderBanner = (content) => {
 			<div>NOTHING RENDERED</div>
 		);
 	}
-}
+};
 class Banner extends Component {
   render() {
 		const bannerContent = this.props.page;
 		return (
 			<div>
-				{ console.log(bannerContent) }
 				{ renderBanner(...bannerContent) }
 			</div>
     );

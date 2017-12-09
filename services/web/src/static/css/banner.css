@@ -1,0 +1,153 @@
+/* BANNER -------- */
+/*--Banner Background image changer--*/
+
+/*--./Banner Background image changer--*/
+
+.home.banner.container {
+	background-image: url(../img/dancers-photo.png);
+	padding-bottom: 3.125rem;
+	padding-top: 9.4375rem;
+  background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+  background-origin: padding-box;
+	width: 100%;
+}
+.home.attention {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 45rem;
+}
+.home.attention h1 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 3.125rem;
+	font-weight: bold;
+	color:#ffffff;
+	line-height: 1;
+	width: 45rem;
+	text-align: center;
+}
+.home.attention p {
+	padding-top: 2.6875rem;
+	font-size: 1.5rem;
+	line-height:1.5;
+	color:#ffffff;
+}
+
+.home.button {
+	margin-top:5rem;
+	padding:1.25rem 3.125rem;
+	border-radius: 2px;
+	background-color: #f5a623;
+	color:#ffffff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.375rem;
+	font-weight: bold;
+}
+.about.banner.container {
+	background-image: url(../img/workout-photo.png);
+	border-bottom: 10px solid #794ae2;
+	background-position: left center;
+	background-origin: padding-box;
+	background-size: 50% 100%;
+	padding-bottom: 10.625rem;
+	padding-top: 9rem;
+	background-repeat: no-repeat;
+	width: 100%;
+}
+.about.attention {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: column;
+	width: 45rem;
+}
+.about.attention h1 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 3.125rem;
+	font-weight: bold;
+	color:#794ae2;
+	width: 45rem;
+	text-align: left;
+	/*padding-bottom: 4rem;*/
+}
+.about.attention p {
+	padding-top: 2.6875rem;
+	font-size: 1.5rem;
+	line-height:1.5;
+	color:#666666;
+	text-align: center;
+}
+.classes.banner.container {
+	background-image: url(../img/classes-photo.png);
+	border-bottom: 10px solid #794ae2;
+	background-position: left center;
+	background-origin: padding-box;
+	background-size: 50% 100%;
+	padding-bottom: 10.625rem;
+	padding-top: 9rem;
+	background-repeat: no-repeat;
+	width: 100%;
+}
+.classes.attention {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: column;
+	width: 45rem;
+}
+.classes.attention h1 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 3.125rem;
+	font-weight: bold;
+	color:#794ae2;
+	width: 45rem;
+	text-align: left;
+	/*padding-bottom: 4rem;*/
+}
+.classes.attention p {
+	padding-top: 2.6875rem;
+	font-size: 1.5rem;
+	line-height:1.5;
+	color:#666666;
+	text-align: center;
+}
+.faculty.banner.container {
+	background-image: url(../img/faculty-photo.png);
+	border-bottom: 10px solid #8a54ff;
+	background-position: left center;
+	background-origin: padding-box;
+	padding-bottom: 10.625rem;
+	padding-top: 9rem;
+  background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+  background-origin: padding-box;
+	width: 100%;
+}
+.faculty.attention {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: column;
+	width: 45rem;
+}
+.faculty.attention h1 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 3.125rem;
+	font-weight: bold;
+	color:#794ae2;
+	width: 45rem;
+	text-align: center;
+	/*padding-bottom: 4rem;*/
+}
+.faculty.attention p {
+	padding-top: 2.6875rem;
+	font-size: 1.5rem;
+	line-height:1.5;
+	color:#999999;
+	text-align: center;
+}
+/* ./BANNER -------- */

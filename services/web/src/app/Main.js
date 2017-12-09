@@ -45,15 +45,11 @@ const FacultyPage = () => (
 	</div>
 );
 
-
-
-
 class Main extends Component {
-  render() {
+	render() {
 		return (
 			<div>
 				<Header />
-
 				<Switch>
 					<Route exact path='/' render={({path}) => ( HomePage() )} />
 					<Route exact path='/about' render={({path}) => ( AboutPage() )} />
@@ -63,8 +59,8 @@ class Main extends Component {
 				</Switch>
 				<Footer />
 			</div>
-    );
-  }
+		);
+	}
 }
 
 export default Main;
