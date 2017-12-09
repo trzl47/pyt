@@ -5,13 +5,13 @@ const renderProfiles = (profiles, length) => {
 	const profilecards = profiles.map((profilecard) => {
 		return (
 			<div className="col-xs-4 col-sm-4 col-md-4 col-lg-4" key={profilecard.id}>
-			 <ProfileCard
+			<ProfileCard
 				title={profilecard.title}
 				img={profilecard.img}
 				name={profilecard.name}
 				random={profilecard.random} />
 			</div>
-		)
+		);
 	});
 	const chunkProfiles = (arr, size) => {
 		let rows = [];
@@ -27,9 +27,9 @@ const renderProfiles = (profiles, length) => {
 					<div className="row" key={index}>
 						{ row }
 					</div>
-				)
+				);
 			})
-		)
+		);
 	};
 	return (
 		renderRows()

@@ -1,0 +1,45 @@
+/*** header_mobile ***/
+
+/* constants */
+header {
+	padding-left: .625rem;
+	padding-right: .625rem;
+	background: #000000;
+	height: 2.5rem;
+}
+
+nav {
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.main-nav a {
+	font-family: 'Open Sans', sans-serif;
+	color: #ffffff;
+	font-size: .75rem;
+	font-weight: bold;
+	text-decoration: none;
+	padding-right: .625rem;
+}
+
+.main-nav .about,
+.main-nav .classes {
+	padding-right: 3.4375rem;
+}
+
+
+/* ./constants */
+
+/* HomePage NavButton Icon */
+nav .desktop.icon {
+	display: none;
+}
+nav .mobile.icon {
+	/* height: 2.5rem; */
+}
+/* ./HomePage NavButton Icon */
+
+/*** header_mobile ***/

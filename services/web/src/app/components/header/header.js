@@ -3,7 +3,9 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 // css
-import '../../../static/css/header.css';
+import '../../../static/css/header_mobile.css';
+import '../../../static/css/header_desktop.css';
+// import '../../../static/css/header_tablet.css';
 
 class Header extends Component {
 	render() {
