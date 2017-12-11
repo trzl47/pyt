@@ -8,14 +8,20 @@ html {
 body {
 	font-family: 'Roboto', sans-serif;
 	display: grid;
-  grid-template-rows: auto;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+	grid-template-areas:
+		"h"
+		"b"
+		"s"
+		"f";
 	height: 100vh;
 	margin: unset;
 	padding: unset;
 }
 
 /* SUPPORTING -------- */
-.supporting.container {
+/* .supporting.container {
 	width: 100%;
 }
 .supporting.container .faculty {
@@ -31,6 +37,6 @@ body {
 
 .supporting .about .infobar.row {
 	margin: 4rem 19%;
-}
+} */
 
 /* ./SUPPORTING -------- */

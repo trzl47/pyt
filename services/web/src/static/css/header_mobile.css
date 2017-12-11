@@ -1,7 +1,7 @@
 /*** header_mobile ***/
 
-/* constants */
 header {
+	grid-area: "h";
 	padding-left: .625rem;
 	padding-right: .625rem;
 	background: #000000;
@@ -30,15 +30,16 @@ nav {
 	padding-right: 3.4375rem;
 }
 
-
-/* ./constants */
+.main-nav a:hover {
+	color: #f5a623;
+}
 
 /* HomePage NavButton Icon */
 nav .desktop.icon {
 	display: none;
 }
 nav .mobile.icon {
-	/* height: 2.5rem; */
+	display: block;
 }
 /* ./HomePage NavButton Icon */
 
