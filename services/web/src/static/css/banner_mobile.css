@@ -1,4 +1,4 @@
-/*** banner_desktop ***/
+/*** banner_mobile***/
 
 /*--Banner Background image changer--*/
 
@@ -20,6 +20,10 @@
 
 .home.attention {
 	width: 18.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .home.attention h1 {
@@ -32,6 +36,19 @@
 	font-size: 1rem;
 	line-height: 1.6;
 	text-align: center;
+	padding-bottom: 3.875rem;
 }
 
-/*** ./banner_desktop ***/
+
+.home.button {
+	background-color: #f5a623;
+	border-color: #f5a623;
+	color: #fff;
+	border-radius: 2px;
+	font-size: 1.375rem;
+	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
+	padding: 1.25rem 3.125rem;
+	white-space: nowrap;
+}
+/*** banner_mobile***/
