@@ -34,6 +34,10 @@ nav {
 	color: #f5a623;
 }
 
+.main-nav .active {
+	color: #f5a623;
+}
+
 /* HomePage NavButton Icon */
 nav .desktop.icon {
 	display: none;

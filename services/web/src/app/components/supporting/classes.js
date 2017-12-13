@@ -12,7 +12,7 @@ const renderClasses = (classes, length) => {
 											weekendSched={classcard.weekendSched}
 											desc={classcard.description} />
 			</div>
-		)
+		);
 	});
 	const chunkClasses = (arr, size) => {
 		let rows = [];
@@ -28,9 +28,9 @@ const renderClasses = (classes, length) => {
 					<div className="row" key={index}>
 						{ row }
 					</div>
-				)
+				);
 			})
-		)
+		);
 	};
 	return (
 		renderRows()

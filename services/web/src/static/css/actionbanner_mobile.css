@@ -1,0 +1,53 @@
+/*** actionbanner_mobile***/
+
+.actionbanner {
+	padding-bottom: 3.125rem;
+	padding-top: 7.125rem;
+  background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #ffffff;
+	background-image: url(../img/dancers-photo.png);
+}
+
+/* home page */
+
+.actionbanner .attention {
+	width: 18.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.actionbanner .attention h1 {
+	font-size: 1.875rem;
+	padding-bottom: 1.625rem;
+	text-align: center;
+}
+
+.actionbanner .attention p {
+	font-size: 1rem;
+	line-height: 1.6;
+	text-align: center;
+	padding-bottom: 3.875rem;
+}
+
+.actionbanner .button {
+	background-color: #f5a623;
+	border-color: #f5a623;
+	color: #fff;
+	border-radius: 2px;
+	font-size: 1.375rem;
+	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
+	padding: 1.25rem 3.125rem;
+	white-space: nowrap;
+}
+
+/* ./home page */
+
+/*** ./actionbanner_mobile***/

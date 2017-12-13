@@ -1,4 +1,5 @@
-/*--InfoBars--*/
+/*** infobarB_mobile ***/
+
 .about .infobar {
 	display: flex;
 	flex-direction: row;
@@ -26,4 +27,5 @@
 	line-height: 1.5;
 	color: #666666;
 }
-/*--./InfoBars--*/
+
+/*** infobarB_mobile ***/

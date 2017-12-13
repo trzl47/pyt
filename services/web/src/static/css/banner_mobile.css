@@ -1,11 +1,6 @@
 /*** banner_mobile***/
 
-/*--Banner Background image changer--*/
-
-/*--./Banner Background image changer--*/
-
-.home.banner {
-	background-image: url(../img/dancers-photo.png);
+.banner {
 	padding-bottom: 3.125rem;
 	padding-top: 7.125rem;
   background-size: cover;
@@ -14,41 +9,36 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	/* justify-content: space-around; */
 	color: #ffffff;
 }
 
-.home.attention {
-	width: 18.5rem;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+/*--Banner Background image changer--*/
+
+.about.banner {
+	background-image: url(../img/workout-photo.png);
 }
 
-.home.attention h1 {
-	font-size: 1.875rem;
-	padding-bottom: 1.625rem;
-	text-align: center;
+/*--./Banner Background image changer--*/
+
+.bannerinfo {
+	/* background-color: #ffffff; */
+	color: #666666;
+	border-bottom: #794ae2;
+	border-bottom-width: 10px;
 }
 
-.home.attention p {
+.bannerinfo h1 {
+	color: #794ae2;
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+
+.bannerinfo p {
 	font-size: 1rem;
 	line-height: 1.6;
-	text-align: center;
-	padding-bottom: 3.875rem;
 }
 
+/* ./about page */
 
-.home.button {
-	background-color: #f5a623;
-	border-color: #f5a623;
-	color: #fff;
-	border-radius: 2px;
-	font-size: 1.375rem;
-	font-weight: bold;
-	font-family: 'Open Sans', sans-serif;
-	padding: 1.25rem 3.125rem;
-	white-space: nowrap;
-}
+
 /*** banner_mobile***/

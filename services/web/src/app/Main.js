@@ -5,6 +5,7 @@ import { Route, Switch } from 'react-router-dom';
 //Components
 import Header from './components/header/header.js';
 import Banner from './components/banner/banner.js';
+import ActionBanner from './components/banner/actionbanner.js';
 import banners from './components/banner/banners.js';
 import Footer from './components/footer/footer.js';
 	import Home from './components/supporting/home.js';
@@ -19,7 +20,7 @@ import NotFound from '../app/NotFound';
 
 const HomePage = () => (
 	<div>
-		<Banner page={banners.Home} />
+		<ActionBanner page={banners.Home} />
 		<Home panels={panels.Home}/>
 	</div>
 );

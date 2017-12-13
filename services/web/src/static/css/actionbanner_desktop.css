@@ -1,0 +1,17 @@
+/*** banner_desktop ***/
+
+@media only screen and (min-width: 768px) {
+	.home.attention {
+		width: 45rem;
+		padding-bottom: 3.125rem;
+	}
+
+	.home.attention h1 {
+		padding-bottom: 2.6875em;
+	}
+
+	.home.attention p {
+		padding-bottom: 5rem;
+	}
+}
+/*** ./banner_desktop ***/
