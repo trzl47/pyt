@@ -1,30 +1,50 @@
 /*** banner_mobile***/
 
 .banner {
-	padding-bottom: 3.125rem;
-	padding-top: 7.125rem;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+	grid-template-areas:
+		"banner"
+		"info";
   background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	display: grid;
 	color: #ffffff;
+	border-bottom: 10px solid #794ae2;
+	/* padding-bottom: 3.125rem; */
+	/* padding-top: 7.125rem; */
+}
+
+.image {
+	grid-area: banner;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	object-fit: contain;
 }
 
 /*--Banner Background image changer--*/
 
 .about.banner {
-	background-image: url(../img/workout-photo.png);
+	/* background-image: url(../img/workout-photo.png); */
 }
 
+.classes.banner {
+	/* background-image: url(../img/classes-photo.png); */
+}
+
+.faculty.banner {
+	/* background-image: url(../img/faculty-photo.png); */
+}
 /*--./Banner Background image changer--*/
 
 .bannerinfo {
-	/* background-color: #ffffff; */
+	grid-area: info;
+	background-color: #ffffff;
 	color: #666666;
-	border-bottom: #794ae2;
-	border-bottom-width: 10px;
 }
 
 .bannerinfo h1 {

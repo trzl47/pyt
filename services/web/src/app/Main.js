@@ -6,7 +6,7 @@ import { Route, Switch } from 'react-router-dom';
 import Header from './components/header/header.js';
 import Banner from './components/banner/banner.js';
 import ActionBanner from './components/banner/actionbanner.js';
-import banners from './components/banner/banners.js';
+	import banners from './components/banner/banners.js';
 import Footer from './components/footer/footer.js';
 	import Home from './components/supporting/home.js';
 	import About from './components/supporting/about.js';

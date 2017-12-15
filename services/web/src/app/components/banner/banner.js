@@ -8,6 +8,9 @@ const renderBanner = (content) => {
 	if (content.page === 'about') {
 		return (
 			<div className="about banner">
+				<div className='image'>
+					<img src={content.img}></img>
+				</div>
 				<div className="about bannerinfo">
 					<h1> ABOUT PYT DANCE </h1>
 					<p>Lorem ipsum dolor sit amet, consectetur<br />adipiscing elit. Curabitur pharetra placerat felis<br />et dignissim. Morbi nec mi leo. Aliquam eget.</p>
@@ -18,13 +21,12 @@ const renderBanner = (content) => {
 	else if (content.page === 'classes') {
 		return (
 			<div className="classes banner">
-				<div className="col-md-6">
+				<div className='image'>
+					<img src={content.img}></img>
 				</div>
-				<div className="col-md-6">
-					<div className="classes bannerinfo">
-						<h1> CLASSES </h1>
-						<p>Lorem ipsum dolor sit amet, consectetur<br />adipiscing elit. Curabitur pharetra placerat felis<br />et dignissim. Morbi nec mi leo. Aliquam eget.</p>
-					</div>
+				<div className="classes bannerinfo">
+					<h1> CLASSES </h1>
+					<p>Lorem ipsum dolor sit amet, consectetur<br />adipiscing elit. Curabitur pharetra placerat felis<br />et dignissim. Morbi nec mi leo. Aliquam eget.</p>
 				</div>
 			</div>
 		);
@@ -32,13 +34,12 @@ const renderBanner = (content) => {
 	else if (content.page === 'faculty') {
 		return (
 			<div className="faculty banner">
-				<div className="col-md-4">
+				<div className='image'>
+					<img src={content.img}></img>
 				</div>
-				<div className="col-md-8">
-					<div className="faculty bannerinfo">
-						<h1> FACULTY </h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />Curabitur pharetra placerat felis et dignissim. Morbi nec mi<br />leo. Aliquam eget.</p>
-					</div>
+				<div className="faculty bannerinfo">
+					<h1> FACULTY </h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />Curabitur pharetra placerat felis et dignissim. Morbi nec mi<br />leo. Aliquam eget.</p>
 				</div>
 			</div>
 		);

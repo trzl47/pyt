@@ -19,24 +19,3 @@ body {
 	margin: unset;
 	padding: unset;
 }
-
-/* SUPPORTING -------- */
-/* .supporting.container {
-	width: 100%;
-}
-.supporting.container .faculty {
-	padding: 5.625rem 7.5rem 5rem 7.5rem;
-}
-.faculty .row {
-	margin-bottom: 6.25rem;
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-
-.supporting .about .infobar.row {
-	margin: 4rem 19%;
-} */
-
-/* ./SUPPORTING -------- */
