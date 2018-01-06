@@ -7,37 +7,36 @@
 	grid-template-areas:
 		"banner"
 		"info";
-  background-size: cover;
+  background-size: 100% auto;
 	background-position: center;
 	background-repeat: no-repeat;
 	display: grid;
 	color: #ffffff;
 	border-bottom: 10px solid #794ae2;
 	/* padding-bottom: 3.125rem; */
-	/* padding-top: 7.125rem; */
+	padding-top: 12.625rem;
+
 }
 
 .image {
 	grid-area: banner;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	object-fit: contain;
+	margin: auto;
+	display: block;
+	object-fit: cover;
 }
 
 /*--Banner Background image changer--*/
 
 .about.banner {
-	/* background-image: url(../img/workout-photo.png); */
+	background-image: url(../img/workout-photo.png);
 }
 
 .classes.banner {
-	/* background-image: url(../img/classes-photo.png); */
+	background-image: url(../img/classes-photo.png);
 }
 
 .faculty.banner {
-	/* background-image: url(../img/faculty-photo.png); */
+	background-image: url(../img/faculty-photo.png);
 }
 /*--./Banner Background image changer--*/
 
@@ -51,9 +50,11 @@
 	color: #794ae2;
 	font-size: 1.25rem;
 	font-weight: bold;
+	text-align: center;
 }
 
 .bannerinfo p {
+	/* text-align: center; */
 	font-size: 1rem;
 	line-height: 1.6;
 }

@@ -26,21 +26,21 @@ const HomePage = () => (
 );
 
 const AboutPage = () => (
-	<div>
+	<div className='page'>
 		<Banner page={banners.About} />
 		<About panels={panels.About} infobars={infobars.About} />
 	</div>
 );
 
 const ClassPage = () => (
-	<div>
+	<div className='page'>
 		<Banner page={banners.Classes} />
 		<Classes classes={classCards.Classes} />
 	</div>
 );
 
 const FacultyPage = () => (
-	<div>
+	<div className='page'>
 		<Banner page={banners.Faculty} />
 		<Faculty profiles={profiles.Faculty} />
 	</div>
