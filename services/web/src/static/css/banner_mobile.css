@@ -7,15 +7,11 @@
 	grid-template-areas:
 		"banner"
 		"info";
-  background-size: 100% auto;
-	background-position: center;
 	background-repeat: no-repeat;
 	display: grid;
-	color: #ffffff;
 	border-bottom: 10px solid #794ae2;
-	/* padding-bottom: 3.125rem; */
+	padding-bottom: 3.125rem;
 	padding-top: 12.625rem;
-
 }
 
 .image {
@@ -29,22 +25,22 @@
 
 .about.banner {
 	background-image: url(../img/workout-photo.png);
+  background-size: 100% 100%;
+	background-position: cover;
 }
 
 .classes.banner {
 	background-image: url(../img/classes-photo.png);
+	background-size: 100% 100%;
+	background-position: cover;
 }
 
 .faculty.banner {
 	background-image: url(../img/faculty-photo.png);
+	background-size: auto 100%;
+	background-position: cover;
 }
 /*--./Banner Background image changer--*/
-
-.bannerinfo {
-	grid-area: info;
-	background-color: #ffffff;
-	color: #666666;
-}
 
 .bannerinfo h1 {
 	color: #794ae2;
@@ -54,9 +50,13 @@
 }
 
 .bannerinfo p {
-	/* text-align: center; */
 	font-size: 1rem;
 	line-height: 1.6;
+	color: #666666;
+}
+
+.faculty p {
+	color: #999999;
 }
 
 /* ./about page */
