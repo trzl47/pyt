@@ -11,6 +11,15 @@ import '../../../static/css/header_desktop.css';
 // import '../../../static/css/header_tablet.css';
 
 class Header extends Component {
+	constructor(props){
+		super(props);
+		this.state = {};
+	}
+
+	checkHeader(pageID) {
+		return this.props.page === pageID ? '#f5a623' : '#ffffff';
+	}
+
 	render() {
 		return (
 			<header>
@@ -20,9 +29,9 @@ class Header extends Component {
 						<img className="mobile icon" src={require('../../../static/img/logo-mobile.png')} alt="logo"></img>
 					</NavLink>
 					<span className='main-nav'>
-						<NavLink className="about" to="/about" > About </NavLink>
-						<NavLink className="classes" to="/classes" > Classes </NavLink>
-						<NavLink className="faculty" to="/faculty" > Faculty </NavLink>
+						<NavLink className="about" to="/about" style={{color: this.checkHeader(1)}}> About </NavLink>
+						<NavLink className="classes" to="/classes" style={{color: this.checkHeader(2)}}> Classes </NavLink>
+						<NavLink className="faculty" to="/faculty" style={{color: this.checkHeader(3)}}> Faculty </NavLink>
 					</span>
 				</nav>
 			</header>

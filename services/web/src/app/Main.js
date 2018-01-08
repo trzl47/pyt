@@ -20,6 +20,7 @@ import NotFound from '../app/NotFound';
 
 const HomePage = () => (
 	<div>
+		<Header page={0} />
 		<ActionBanner page={banners.Home} />
 		<Home panels={panels.Home}/>
 	</div>
@@ -27,6 +28,7 @@ const HomePage = () => (
 
 const AboutPage = () => (
 	<div className='page'>
+		<Header page={1} />
 		<Banner page={banners.About} />
 		<About panels={panels.About} infobars={infobars.About} />
 	</div>
@@ -34,6 +36,7 @@ const AboutPage = () => (
 
 const ClassPage = () => (
 	<div className='page'>
+		<Header page={2} />
 		<Banner page={banners.Classes} />
 		<Classes classes={classCards.Classes} />
 	</div>
@@ -41,6 +44,7 @@ const ClassPage = () => (
 
 const FacultyPage = () => (
 	<div className='page'>
+		<Header page={3} />
 		<Banner page={banners.Faculty} />
 		<Faculty profiles={profiles.Faculty} />
 	</div>
@@ -50,7 +54,6 @@ class Main extends Component {
 	render() {
 		return (
 			<div>
-				<Header />
 				<Switch>
 					<Route exact path='/' render={({path}) => ( HomePage() )} />
 					<Route exact path='/about' render={({path}) => ( AboutPage() )} />
