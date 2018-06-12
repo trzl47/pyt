@@ -1,0 +1,89 @@
+version: '3.5'
+services:
+  react:
+    build:
+      context: ./services/react/
+      dockerfile: Dockerfile
+    image: react
+    container_name: react
+    restart: unless-stopped
+    volumes:
+    #      - ./services/react:/usr/src/app
+      - ./services/react:/app:z  # z needed for selinux
+      - /app/node_modules
+      - /build/client # uncomment for development
+      - /build/server # uncomment for development
+    env_file: .env
+    environment:
+      - NODE_ENV=production
+    depends_on:
+      - apollo
+    networks:
+      - webproxy
+  augment-nginx:
+    build:
+      context: ./services/augment-nginx/
+      dockerfile: Dockerfile
+    image: augment-nginx
+    container_name: augment-nginx
+    restart: always
+    volumes:
+      - ./services/react/build/client/:/client #uncommnet for production
+      - ./services/react/build/server/:/server #uncomment for production
+    env_file: .env
+    environment:
+      - NODE_ENV=production
+    depends_on:
+      - react
+    networks:
+      - webproxy
+  apollo:
+    build:
+      context: ./services/apollo/
+      dockerfile: Dockerfile
+    image: augment-apollo
+    container_name: augment-apollo
+    restart: unless-stopped
+    volumes:
+      - ./services/apollo/:/usr/src/app
+      - /usr/src/app/node_modules
+    env_file: .env
+    environment:
+      - NODE_ENV=production
+    # depends_on:
+      # - db
+      # - service
+    networks:
+      - webproxy
+  reverseproxy:
+    build:
+      context: ./services/reverseproxy/
+      dockerfile: Dockerfile
+    image: reverseproxy
+    container_name: augment-proxy
+    restart: always
+    expose:
+      - "80"
+    depends_on:
+      - react
+      - augment-nginx
+      - apollo
+    networks:
+      - webproxy
+  webproxy:
+    build:
+      context: ./services/webproxy/
+      dockerfile: Dockerfile
+    image: webproxy
+    container_name: webproxy
+    restart: always
+    ports:
+      - 80:80
+    depends_on:
+      - reverseproxy
+    networks:
+      - webproxy
+networks:
+  webproxy:
+    driver: bridge
+
