@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 // css
 import '../../static/css/footer_mobile.css';
 import '../../static/css/footer_desktop.css';
@@ -11,9 +10,9 @@ class Footer extends Component {
 				<div className="media">
 					<img className="desktop icon" src={require('../../static/img/logo-color.png')} alt="logo"></img>
 					<div className="social-media">
-						<a href="/"><i className="fa fa-facebook fa-2x"></i></a>
-						<a href="/"><i className="fa fa-twitter fa-2x"></i></a>
-						<a href="/"><i className="fa fa-instagram fa-2x"></i></a>
+						<a href="/"><i className="fab fa-facebook fa-2x"></i></a>
+						<a href="/"><i className="fab fa-twitter fa-2x"></i></a>
+						<a href="/"><i className="fab fa-instagram fa-2x"></i></a>
 					</div>
 					<span><a href="/"> Contact Us </a> | <a href="/"> Terms & Conditions </a></span>
 				</div>
