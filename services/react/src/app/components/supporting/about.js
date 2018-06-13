@@ -13,21 +13,25 @@ class AboutSupporting extends Component {
 										img={panel.img}
 										color={panel.color}/>;
 		});
+
 		const infobarContent = this.props.infobars;
 		let infobarA = [];
 		let infobarB = [];
+
 		infobarContent.forEach(function(obj) {
 			obj.id % 2 === 0 ?
 				infobarA.push(obj)
 				:
 				infobarB.push(obj);
 		});
+
 		infobarA = infobarA.map((infobar) => {
 			return <InfoBarA title={infobar.title}
 										desc={infobar.description}
 										img={infobar.img}
 										key={infobar.id} />;
 		});
+
 		infobarB = infobarB.map((infobar) => {
 			return <InfoBarB title={infobar.title}
 										desc={infobar.description}

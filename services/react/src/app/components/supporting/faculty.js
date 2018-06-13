@@ -6,33 +6,16 @@ import '../../static/css/faculty-supporting.css';
 const renderProfiles = (profiles, length) => {
 	const profilecards = profiles.map((profilecard) => {
 		return (
-			<ProfileCard key={profilecard.id}
+			<ProfileCard className={`profile${profilecard.id.toString()}`}
+				key={profilecard.id}
 				title={profilecard.title}
 				img={profilecard.img}
 				name={profilecard.name}
 				random={profilecard.random} />
 		);
 	});
-	const chunkProfiles = (arr, size) => {
-		let rows = [];
-		for (let i = 0; i < arr.length; i+=size) {
-			rows.push(arr.slice(i,i+size));
-		}
-		return rows;
-	};
-	const renderRows = () => {
-		return (
-			chunkProfiles(profilecards, 3).map((row, index) => {
-				return (
-					<div className="row" key={index}>
-						{ row }
-					</div>
-				);
-			})
-		);
-	};
 	return (
-		renderRows()
+		profilecards
 	);
 };
 

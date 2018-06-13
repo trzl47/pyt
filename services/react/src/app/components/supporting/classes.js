@@ -6,14 +6,14 @@ import '../../static/css/classes-supporting.css';
 const renderClasses = (classes, length) => {
 	const classcards = classes.map((classcard) => {
 		return (
-			<ClassCard className={classcard.id.toString()}
-								key={classcard.id}
-								title={classcard.title}
-								weekdays={classcard.weekdays}
-								weekdaysched={classcard.weekdaysched}
-								weekends={classcard.weekends}
-								weekendSched={classcard.weekendSched}
-								desc={classcard.description} />
+			<ClassCard className={`class${classcard.id.toString()}`}
+				key={classcard.id}
+				title={classcard.title}
+				weekdays={classcard.weekdays}
+				weekdaysched={classcard.weekdaysched}
+				weekends={classcard.weekends}
+				weekendSched={classcard.weekendSched}
+				desc={classcard.description} />
 		);
 	});
 	return (

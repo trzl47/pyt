@@ -39,7 +39,7 @@ const profiles = {
 		{
 			name: 'Noah Craig',
 			title: 'Instructor',
-			random: 'When The Morning DawnsThe Basics Of Western Astrology Explained',
+			random: 'The Basics Of Western Astrology Explained',
 			img: require('../../../../static/img/noah.png'),
 			id: count++
     },
