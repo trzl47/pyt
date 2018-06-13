@@ -7,18 +7,32 @@
 	width:16.875rem;
 	text-align: center;
 }
-.profilecard h3 {
-	font-size: 1.875rem;
+
+.photo {
+
+}
+
+.name {
+	font-size: 1.5rem;
 	font-weight: bold;
 	color: #8a54ff;
 	padding-bottom: .625rem;
 }
-.profilecard > p:first-of-type {
+
+.title {
 	font-weight:bold;
 	padding-bottom: .625rem;
-	font-size: 1.125rem;
+	font-size: 1rem;
 }
-.profilecard > p:nth-of-type(2) {
-	line-height: 1.5;
+
+.quote {
+	line-height: 1.7;
+	font-size: .875rem;
 }
 /*--./Profiles--*/
+/*** profiles desktop ***/
+
+@media only screen and (min-width: 768px) {
+}
+
+/*** ./profiles desktop ***/

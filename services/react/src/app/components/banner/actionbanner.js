@@ -1,8 +1,7 @@
 // Libs
 import React, { Component } from 'react';
 // css
-import '../../static/css/actionbanner_mobile.css';
-// import '../../static/css/actionbanner_desktop.css';
+import '../../static/css/actionbanner.css';
 
 const renderBanner = (content) => {
 	if (content.page === 'home') {

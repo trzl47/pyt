@@ -1,8 +1,7 @@
 // Libs
 import React, { Component } from 'react';
 // css
-import '../../static/css/banner_mobile.css';
-// import '../../static/css/banner_desktop.css';
+import '../../static/css/banner.css';
 
 const renderBanner = (content) => {
 	if (content.page === 'about') {

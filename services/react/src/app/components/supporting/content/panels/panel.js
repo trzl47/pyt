@@ -1,8 +1,7 @@
 import React from 'react';
 
 // css
-import '../../../../static/css/panel_mobile.css';
-import '../../../../static/css/panel_desktop.css';
+import '../../../../static/css/panels.css';
 
 const Panel = props => (
 		<div className="panel" style={props.img}>

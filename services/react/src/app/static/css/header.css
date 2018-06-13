@@ -48,3 +48,28 @@ nav .mobile.icon {
 /* ./HomePage NavButton Icon */
 
 /*** header_mobile ***/
+/*** header_desktop ***/
+@media only screen and (min-width: 768px) {
+	header {
+		grid-area: "h";
+		padding-left: 3.6875rem;
+		padding-right: 3.4375rem;
+		height: 3.875rem;
+	}
+
+	/* HomePage NavButton Icon */
+	nav .desktop.icon {
+		display: block;
+		height:3.875rem;
+	}
+	nav .mobile.icon {
+		display: none;
+	}
+	/* ./HomePage NavButton Icon */
+
+	.main-nav a {
+		font-size: 1rem;
+	}
+}
+
+/*** ./header_desktop ***/

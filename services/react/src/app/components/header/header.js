@@ -6,9 +6,7 @@ import React, { Component } from 'react';
 import NavLink from '../../NavLink.js';
 
 // css
-import '../../static/css/header_mobile.css';
-import '../../static/css/header_desktop.css';
-// import '../../static/css/header_tablet.css';
+import '../../static/css/header.css';
 
 class Header extends Component {
 	constructor(props){

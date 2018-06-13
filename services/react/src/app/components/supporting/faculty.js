@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import ProfileCard from './content/profilecard/profilecard.js';
+// css
+import '../../static/css/faculty-supporting.css';
 
 const renderProfiles = (profiles, length) => {
 	const profilecards = profiles.map((profilecard) => {
 		return (
-			<div className="col-xs-4 col-sm-4 col-md-4 col-lg-4" key={profilecard.id}>
-			<ProfileCard
+			<ProfileCard key={profilecard.id}
 				title={profilecard.title}
 				img={profilecard.img}
 				name={profilecard.name}
 				random={profilecard.random} />
-			</div>
 		);
 	});
 	const chunkProfiles = (arr, size) => {
@@ -40,7 +40,7 @@ class FacultySupporting extends Component {
 	render() {
 		const profilecardContent = this.props.profiles;
 		return (
-			<div className="faculty">
+			<div className="faculty-supporting">
 				{ renderProfiles(profilecardContent, profilecardContent.length) }
 			</div>
 		);

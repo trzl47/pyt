@@ -76,3 +76,55 @@
 	/* ./unhide lines */
 
 /*** ./footer_mobile ***/
+/*** footer_desktop ***/
+@media only screen and (min-width: 768px) {
+	.media {
+		height: 3.125rem;
+		justify-content: space-around;
+	}
+
+	/* hide logo */
+	.desktop.icon {
+		display: block;
+	}
+	/* ./hide logo */
+
+	/* hide links */
+	.media span {
+		display: block;
+	}
+	/* ./hide links */
+
+	.social-media {
+		width: 9.375rem;
+	}
+
+	.contact {
+		display: flex;
+		height: 10rem;
+		padding: unset;
+		margin: 0;
+	}
+
+	.contact .info {
+		font-size: .875rem;
+		letter-spacing: 0.7px;
+		margin: unset;
+		display: flex;
+		flex-direction: row;
+	}
+
+	/* unhide lines */
+	.contact .info .desktop {
+		display: block;
+		padding: unset;
+		margin: unset;
+	}
+
+	.contact .info .mobile {
+		display: none;
+	}
+	/* ./unhide lines */
+
+}
+/*** ./footer_desktop ***/

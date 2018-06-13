@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 // css
-import '../../static/css/footer_mobile.css';
-import '../../static/css/footer_desktop.css';
+import '../../static/css/footer.css';
 
 class Footer extends Component {
   render() {

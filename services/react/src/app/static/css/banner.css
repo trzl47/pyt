@@ -25,8 +25,8 @@
 
 .about.banner {
 	background-image: url(../img/workout-photo.png);
-  background-size: 100% 100%;
-	background-position: cover;
+  background-size: 100vh;
+	background-position: top center;
 }
 
 .classes.banner {
@@ -63,3 +63,36 @@
 
 
 /*** banner_mobile***/
+/*** banner_desktop ***/
+
+@media only screen and (min-width: 768px) {
+	.banner {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto;
+		grid-template-areas:
+			"b i"
+	}
+
+	/*--Banner Background image changer--*/
+
+	.about.banner {
+		background-image: url(../img/workout-photo.png);
+		background-size: 100% 100%;
+		background-position: top center;
+	}
+
+	.classes.banner {
+		background-image: url(../img/classes-photo.png);
+		background-size: 100% 100%;
+		background-position: cover;
+	}
+
+	.faculty.banner {
+		background-image: url(../img/faculty-photo.png);
+		background-size: auto 100%;
+		background-position: cover;
+	}
+	/*--./Banner Background image changer--*/
+}
+/*** ./banner_desktop ***/
