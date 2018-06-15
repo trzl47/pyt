@@ -1,46 +1,24 @@
 /*** banner_mobile***/
 
 .banner {
-	display: grid;
-	grid-template-columns: auto;
-	grid-template-rows: auto;
-	grid-template-areas:
-		"banner"
-		"info";
 	background-repeat: no-repeat;
-	display: grid;
 	border-bottom: 10px solid #794ae2;
-	padding-bottom: 3.125rem;
-	padding-top: 12.625rem;
+	max-width: 100vw;
 }
 
-.image {
-	grid-area: banner;
-	margin: auto;
-	display: block;
-	object-fit: cover;
-}
-
-/*--Banner Background image changer--*/
-
-.about.banner {
-	background-image: url(../img/workout-photo.png);
-  background-size: 100vh;
-	background-position: top center;
-}
-
-.classes.banner {
-	background-image: url(../img/classes-photo.png);
-	background-size: 100% 100%;
-	background-position: cover;
+.banner .image {
+	max-width: 100vw;
 }
 
 .faculty.banner {
 	background-image: url(../img/faculty-photo.png);
-	background-size: auto 100%;
-	background-position: cover;
+	/* background-size: 100vw; */
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: cover;
+	padding-bottom: 3.125rem;
+	padding-top: 12.625rem;
 }
-/*--./Banner Background image changer--*/
 
 .bannerinfo h1 {
 	color: #794ae2;
@@ -58,41 +36,27 @@
 .faculty p {
 	color: #999999;
 }
-
-/* ./about page */
-
-
 /*** banner_mobile***/
-/*** banner_desktop ***/
 
-@media only screen and (min-width: 768px) {
+/*** banner tablet ***/
+@media only screen and (min-width: 720px) {
 	.banner {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: auto;
 		grid-template-rows: auto;
 		grid-template-areas:
-			"b i"
+			"image bannerinfo";
 	}
 
-	/*--Banner Background image changer--*/
-
-	.about.banner {
-		background-image: url(../img/workout-photo.png);
-		background-size: 100% 100%;
-		background-position: top center;
+	.bannerinfo {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
+}
 
-	.classes.banner {
-		background-image: url(../img/classes-photo.png);
-		background-size: 100% 100%;
-		background-position: cover;
-	}
-
-	.faculty.banner {
-		background-image: url(../img/faculty-photo.png);
-		background-size: auto 100%;
-		background-position: cover;
-	}
-	/*--./Banner Background image changer--*/
+/*** banner_desktop ***/
+@media only screen and (min-width: 768px) {
 }
 /*** ./banner_desktop ***/
