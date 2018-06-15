@@ -1,12 +1,18 @@
 version: '3'
 services:
-  web:
+  pyt-nginx:
     image: trzl/portfolio:pyt-react.1
-    container_name: pyt-react
+    container_name: pyt-nginx
+    restart: unless-stopped
+  reverseproxy:
+    image: trzl/portfolio:pyt-proxy.1
+    container_name: pyt-proxy
     restart: unless-stopped
     expose:
       - "80"
       - "443"
+    depends_on:
+      - pyt-nginx
     environment:
       VIRTUAL_HOST: pytdance.tbrownkcdev.com
       LETSENCRYPT_HOST: pytdance.tbrownkcdev.com

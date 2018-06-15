@@ -12,7 +12,6 @@ services:
       - ./services/react:/app:z  # z needed for selinux
       - /app/node_modules
       - /build/client-dev
-      - /build/server-dev
     env_file: .env
   pyt-nginx:
     build:
@@ -23,7 +22,6 @@ services:
     restart: always
     volumes:
       - ./services/react/build/client-dev/:/client
-      - ./services/react/build/server-dev/:/server
     env_file: .env
     depends_on:
       - react
