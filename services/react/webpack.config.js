@@ -71,80 +71,83 @@ const browserConfig = {
 	],
 };
 
-const serverConfig = {
-	entry: './src/server.js',
-	devtool: devMode ? 'cheap-module-source-map' : 'source-map',
-	target: 'node',
-	mode: devMode ? 'development' : 'production',
-	output: {
-		path: devMode ? path.resolve(__dirname, 'build/server-dev') : path.resolve(__dirname, 'build/server'),
-		filename: 'bundle.js',
-		publicPath: '/',
-	},
-	externals: (context, request, callback) => {
-		if (/^[a-z0-9-][a-z0-9-./]+$/.test(request)) {
-			return callback(null, `commonjs ${request}`);
-		}
-		callback();
-	},
-	module: {
-		rules: [
-			{
-				test: /\.(js|jsx)$/,
-				exclude: /node_modules/,
-				use: 'babel-loader',
-			},
-			{
-				test: /\.(ttf|woff|woff2|eot|svg|ico|png|jpg)?$/,
-				use: ['file-loader'],
-			},
-			{
-				test: /\.s?[ac]ss$/,
-				use: [
-					devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
-					'css-loader',
-				],
-			},
-			{
-				test: /\.html$/,
-				use: [
-					{
-						loader: 'html-loader',
-						options: { minimize: true },
-					},
-				],
-			},
-		],
-	},
-	resolve: {
-		extensions: ['.js', '.jsx'],
-	},
-	watchOptions: {
-		ignored: /node_modules/,
-		aggregateTimeout: 300,
-		poll: 1000,
-	},
-	plugins: [
-		new webpack.DefinePlugin({
-			__isBrowser__: 'false',
-		}),
-		new HtmlWebPackPlugin({
-			template: './src/index.html',
-			filename: './index.html',
-		}),
-		new MiniCssExtractPlugin({
-			filename: devMode ? '[name].css' : '[name].[hash].css',
-		}),
-	],
-	node: {
-		console: false,
-		global: false,
-		process: false,
-		Buffer: false,
-		__filename: false,
-		__dirname: false,
-		setImmediate: false,
-	},
-};
+// const serverConfig = {
+// 	entry: './src/server.js',
+// 	devtool: devMode ? 'cheap-module-source-map' : 'source-map',
+// 	target: 'node',
+// 	mode: devMode ? 'development' : 'production',
+// 	output: {
+// 		path: devMode ? path.resolve(__dirname, 'build/server-dev') : path.resolve(__dirname, 'build/server'),
+// 		filename: 'bundle.js',
+// 		publicPath: '/',
+// 	},
+// 	externals: (context, request, callback) => {
+// 		if (/^[a-z0-9-][a-z0-9-./]+$/.test(request)) {
+// 			return callback(null, `commonjs ${request}`);
+// 		}
+// 		callback();
+// 	},
+// 	module: {
+// 		rules: [
+// 			{
+// 				test: /\.(js|jsx)$/,
+// 				exclude: /node_modules/,
+// 				use: 'babel-loader',
+// 			},
+// 			{
+// 				test: /\.(ttf|woff|woff2|eot|svg|ico|png|jpg)?$/,
+// 				use: ['file-loader'],
+// 			},
+// 			{
+// 				test: /\.s?[ac]ss$/,
+// 				use: [
+// 					devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+// 					'css-loader',
+// 				],
+// 			},
+// 			{
+// 				test: /\.html$/,
+// 				use: [
+// 					{
+// 						loader: 'html-loader',
+// 						options: { minimize: true },
+// 					},
+// 				],
+// 			},
+// 		],
+// 	},
+// 	resolve: {
+// 		extensions: ['.js', '.jsx'],
+// 	},
+// 	watchOptions: {
+// 		ignored: /node_modules/,
+// 		aggregateTimeout: 300,
+// 		poll: 1000,
+// 	},
+// 	plugins: [
+// 		new webpack.DefinePlugin({
+// 			__isBrowser__: 'false',
+// 		}),
+// 		new HtmlWebPackPlugin({
+// 			template: './src/index.html',
+// 			filename: './index.html',
+// 		}),
+// 		new MiniCssExtractPlugin({
+// 			filename: devMode ? '[name].css' : '[name].[hash].css',
+// 		}),
+// 	],
+// 	node: {
+// 		console: false,
+// 		global: false,
+// 		process: false,
+// 		Buffer: false,
+// 		__filename: false,
+// 		__dirname: false,
+// 		setImmediate: false,
+// 	},
+// };
 
-module.exports = [browserConfig, serverConfig];
+module.exports = [
+	browserConfig,
+	// serverConfig
+];
