@@ -1,0 +1,41 @@
+.classes-supporting {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/*** classes tablet ***/
+
+@media only screen and (min-width: 720px) {
+	.classes-supporting {
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-rows: auto;
+		grid-template-areas:
+			"class0 class1"
+			"class2 class3"
+			"class4 class5"
+			"class6 class7"
+			"class8 class9"
+			"class10 class11";
+	}
+}
+
+/*** ./classes tablet ***/
+/*** classes desktop ***/
+
+@media only screen and (min-width: 1280px) {
+	.classes-supporting {
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-rows: auto;
+		grid-template-areas:
+			"class0 class1 class2"
+			"class3 class4 class5"
+			"class6 class7 class8"
+			"class9 class10 class11";
+	}
+}
+
+/*** ./classes desktop ***/

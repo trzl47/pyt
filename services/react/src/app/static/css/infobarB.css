@@ -1,0 +1,31 @@
+/*  infobarB_mobile */
+
+.infobarB {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #ffffff;
+	padding: 1.875rem 1.25rem;
+	text-align: center;
+}
+
+.infobarB img {
+	height: 6.25rem;
+}
+
+.infobarB h3 {
+	font-size: 1.25rem;
+	line-height: 1.2rem;
+	color: #794ae2;
+}
+
+.infobarB p {
+	color: #666666;
+}
+/*** infobarB_desktop ***/
+
+@media only screen and (min-width: 768px) {
+}
+
+/*** ./infobarB_desktop ***/

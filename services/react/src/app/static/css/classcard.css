@@ -1,0 +1,20 @@
+.classcard {
+	width: 17.5rem;
+}
+
+.classcard h3 {
+	color: rgba(175, 75, 227, 0.9);
+	font-size: 1.875rem;
+	font-weight: bold;
+}
+
+.days {
+	font-weight: bold;
+	font-size: 1rem;
+}
+
+.times {
+	font-size: .875rem;
+	line-height: 1.7;
+	color: #000000;
+}

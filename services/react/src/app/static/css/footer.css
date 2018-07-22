@@ -1,0 +1,130 @@
+/*** footer_mobile ***/
+
+.footer {
+	background-image: url(../img/party-photo.png);
+	background-size: cover;
+	background-position: center;
+  background-repeat: no-repeat;
+	color:#ffffff;
+}
+
+.media {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(120, 73, 225, 0.45);
+	height: 2.5rem;
+	color:#ffffff;
+}
+
+/* hide links */
+.media span {
+	display: none;
+}
+/* ./hide links */
+
+.media a {
+	color:#ffffff;
+}
+
+/* hide logo */
+.desktop.icon {
+	display: none;
+}
+/* ./hide logo */
+
+.social-media {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	color:#ffffff;
+	width: 5.4375rem;
+}
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 1.875rem 0;
+	height: 8.75rem;
+	font-size: .625rem;
+	letter-spacing: 0.5px;
+}
+
+.contact .info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: justify;
+	align-items: center;
+	margin: unset;
+	padding: unset;
+}
+
+	/* unhide lines */
+	.contact .info .desktop {
+		display: none;
+	}
+
+	.contact .info .mobile {
+		display: block;
+		padding: unset;
+		margin: unset;
+	}
+	/* ./unhide lines */
+
+/*** ./footer_mobile ***/
+/*** footer_desktop ***/
+@media only screen and (min-width: 768px) {
+	.media {
+		height: 3.125rem;
+		justify-content: space-around;
+	}
+
+	/* hide logo */
+	.desktop.icon {
+		display: block;
+	}
+	/* ./hide logo */
+
+	/* hide links */
+	.media span {
+		display: block;
+	}
+	/* ./hide links */
+
+	.social-media {
+		width: 9.375rem;
+	}
+
+	.contact {
+		display: flex;
+		height: 10rem;
+		padding: unset;
+		margin: 0;
+	}
+
+	.contact .info {
+		font-size: .875rem;
+		letter-spacing: 0.7px;
+		margin: unset;
+		display: flex;
+		flex-direction: row;
+	}
+
+	/* unhide lines */
+	.contact .info .desktop {
+		display: block;
+		padding: unset;
+		margin: unset;
+	}
+
+	.contact .info .mobile {
+		display: none;
+	}
+	/* ./unhide lines */
+
+}
+/*** ./footer_desktop ***/

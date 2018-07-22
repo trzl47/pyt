@@ -1,0 +1,32 @@
+/*** infobarA_mobile ***/
+
+.infobarA {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #f2f2f2;
+	padding: 1.875rem 1.25rem;
+	text-align: center;
+}
+
+.infobarA img {
+	height: 6.25rem;
+}
+
+.infobarA h3 {
+	font-size: 1.25rem;
+	line-height: 1.2rem;
+	color: #794ae2;
+}
+
+.infobarA p {
+	color: #666666;
+}
+/*** infobarA_mobile ***/
+/*** infobarA_desktop ***/
+
+@media only screen and (min-width: 768px) {
+}
+
+/*** ./infobarA_desktop ***/
